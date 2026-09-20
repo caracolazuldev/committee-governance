@@ -1,46 +1,23 @@
-# Bootstrap a new project
+# Volunteer Committee Governance Tools
 
-This is the **consumer install guide** for mka-bootstrap. You cloned the `install` branch — follow these steps to create your solution repository.
+Tools for committees from mandate, recruitment, meetings, planning, publishing, reporting, and collaboration.
 
-## 1. Clone (you are here)
+## Documentation map
 
-```bash
-git clone git@github.com:caracolazuldev/mka-bootstrap.git my-project
-cd my-project
-```
+| Layer | Location |
+|-------|----------|
+| Business requirements | [manifest/](manifest/) |
+| Roadmap | [ROADMAP.md](ROADMAP.md) |
+| Architecture | [docs/developer/architecture/](docs/developer/architecture/) |
+| Approach | [docs/developer/approach/](docs/developer/approach/) |
+| User docs | [docs/user/](docs/user/) |
+| Admin docs | [docs/admin/](docs/admin/) |
+| Agent skills | [docs/developer/skills/](docs/developer/skills/) |
 
-The default branch is `install`.
+## Agent contract
 
-## 2. Run install
+See [AGENTS.md](AGENTS.md) for documentation precedence and skill routing.
 
-```bash
-./install.sh
-```
+---
 
-You will be prompted for:
-
-- **Solution repository URL** (required) — empty git remote for your new project
-- **Project name** — used in README and manifest
-- **Project description** — optional
-
-Non-interactive example:
-
-```bash
-./install.sh --yes \
-  --solution-url git@github.com:your-org/your-repo.git \
-  --project-name "Your Project"
-```
-
-## 3. Start developing
-
-After install:
-
-- `origin` → your solution repo
-- `project-bootstrap` → mka-bootstrap (for template updates)
-- `install.sh` is removed from your solution repo
-
-Read your new `README.md`, `ROADMAP.md`, and `docs/developer/architecture/knowledge-management.md`.
-
-## Need help?
-
-See the template documentation on the [main branch](https://github.com/caracolazuldev/mka-bootstrap/tree/main).
+_Bootstrapped from [mka-bootstrap](https://github.com/caracolazuldev/mka-bootstrap) v0.2.0._

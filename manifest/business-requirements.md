@@ -1,4 +1,4 @@
-# Business requirements — {{PROJECT_NAME}}
+# Business requirements — Volunteer Committee Governance Tools
 
 <!-- Replace with your project's business requirements (BR-###). -->
 
