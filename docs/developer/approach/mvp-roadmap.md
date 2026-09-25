@@ -74,7 +74,7 @@ Package the stable schema groupings as fetchable recipes from the canonical Noti
 
 ## Open decisions and sequencing gates
 
-1. Select native Notion transcription or bring-your-own transcription before M-014 closes.
+1. Select native Notion transcription or bring-your-own transcription before the candidate meeting-lifecycle stage is scoped for delivery.
 2. Resolve whether recap distribution and action-item handling use Notion Agents or custom Zapier automation before automations are expanded beyond the proven pattern.
 3. Decide whether parent-organization rollups and stronger vote audit trails are MVP requirements before adding them to a milestone.
 
