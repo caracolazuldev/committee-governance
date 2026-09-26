@@ -17,11 +17,18 @@ Exercise the smallest useful slice of the proposed platform so observed API beha
 
 ### M-013 Set up exploratory integration credentials
 
-Provision credentials for Notion, Zapier, and Google Docs/Sheets with the minimum access needed for the test activities. Confirm where credentials are stored and which scopes or sharing grants are required.
+Provision credentials for Notion, Zapier, and Google Docs/Sheets with the minimum access needed for the test activities. Confirm where credentials are stored and which scopes or sharing grants are required. Google authorization is completed via `gcloud` Application Default Credentials on the host machine — see [google-adc-setup.md](../google-adc-setup.md) for the confirmed command and rationale.
 
 **Depends on:** None.
 
 **Done when:** A harmless authenticated smoke check succeeds for each service; the required scopes, account/plan constraints, and secret-storage location are documented; and a repository scan confirms no credential values were added.
+
+**Evidence:**
+
+- **Storage:** All secrets live under `~/.config/cmte-gvrnce/` on the host (bind-mounted into the devcontainer), file mode `600`, gitignored. Repo scan for common credential patterns and for the credential filenames themselves returned no matches in tracked or staged content.
+- **Notion:** Bearer token in `NOTION_API_TOKEN`. Smoke check: `GET /v1/users/me` → HTTP 200.
+- **Zapier:** Deploy key in `ZAPIER_DEPLOY_KEY` (read by the Zapier CLI directly). Smoke check: `integrations --format=json` → authenticated, 0 integrations (valid empty result, not an auth failure).
+- **Google Docs/Sheets:** OAuth via `gcloud auth application-default login` with a project-owned client (Desktop type) and explicit scopes (`cloud-platform` required by `gcloud`, plus `documents`, `spreadsheets`, `userinfo.email`, `openid`). Smoke check: refreshed token verified via `tokeninfo` (correct audience, correct scopes) and harmless `GET` probes against the Sheets and Docs APIs both returned HTTP 404 (endpoint reached and token accepted; resource simply doesn't exist) rather than 401/403.
 
 ### M-014 Validate Notion API capabilities
 

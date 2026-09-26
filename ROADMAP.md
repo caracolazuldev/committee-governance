@@ -1,12 +1,13 @@
 # ── Completed ──
 # ── Acceptance ──
-# ── Quality Assurance ──
-# ── In Progress ──
-# ── Sprint ──
 
 ## M-013 Set up exploratory integration credentials
 
 Provision and verify credentials for Notion, Zapier, and Google Docs/Sheets using approved secret storage. Record required scopes and setup steps without committing secret values. See the [exploratory implementation sprint](docs/developer/approach/exploratory-sprint.md).
+
+# ── Quality Assurance ──
+# ── In Progress ──
+# ── Sprint ──
 
 ## M-014 Validate Notion API capabilities
 
