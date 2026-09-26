@@ -1,0 +1,26 @@
+{
+  "name": "Committee Governance ExImp",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "workspaceFolder": "/workspaces/cmte-gvrnce",
+  "remoteUser": "node",
+  "mounts": [
+    "source=${localEnv:HOME}/.config/cmte-gvrnce,target=/home/node/.config/cmte-gvrnce,type=bind"
+  ],
+  "remoteEnv": {
+    "GOOGLE_OAUTH_CLIENT_FILE": "/home/node/.config/cmte-gvrnce/google-oauth-client.json",
+    "GOOGLE_TOKEN_CACHE": "/home/node/.config/cmte-gvrnce/google-token.json"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
