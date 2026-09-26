@@ -64,7 +64,7 @@ Exercise the proposed collaboration bridge with a tagged test draft. Use the M-0
 
 ### M-018 Explore meeting facilitation UX in Notion
 
-Prototype a meeting workspace in a test Notion instance that guides users through agenda creation, meeting conduct, human note-taking, and making, amending, debating, and disposing of motions. Explore how guidance appears at the moment of use without overwhelming the working meeting record.
+Prototype a meeting workspace in a test Notion instance that guides users through agenda creation, meeting conduct, human note-taking, and making, amending, debating, and disposing of motions. Explore how guidance appears at the moment of use without overwhelming the working meeting record. Findings: [meeting-facilitation-findings.md](../meeting-facilitation-findings.md).
 
 Treat procedural guidance as configurable support, not authoritative rules: committees may follow different bylaws, standing rules, or consensus practices. Walk through a representative meeting scenario with a facilitator or participant and record confusion, missing steps, and facilitation needs.
 
