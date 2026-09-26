@@ -5,10 +5,6 @@
 
 Provision and verify credentials for Notion, Zapier, and Google Docs/Sheets using approved secret storage. Record required scopes and setup steps without committing secret values. See the [exploratory implementation sprint](docs/developer/approach/exploratory-sprint.md).
 
-# ── Quality Assurance ──
-# ── In Progress ──
-# ── Sprint ──
-
 ## M-014 Validate Notion API capabilities
 
 Run a controlled read/write and public-read spike against a test page; record permissions, markdown behavior, schema operations, limits, and any unsupported needs. No production workspace changes.
@@ -20,6 +16,10 @@ Verify programmatic access to create/read a controlled draft and spreadsheet. Re
 ## M-016 Validate Zapier API-driven automation
 
 Prove that a small test automation can be configured, run, inspected, and retried through the API, using a harmless test action. Record trigger, polling, task-history, and failure-handling constraints; do not use the no-code UI builder.
+
+# ── Quality Assurance ──
+# ── In Progress ──
+# ── Sprint ──
 
 ## M-017 Demonstrate a Docs-to-Notion tag-and-file slice
 

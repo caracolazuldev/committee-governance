@@ -32,7 +32,7 @@ Provision credentials for Notion, Zapier, and Google Docs/Sheets with the minimu
 
 ### M-014 Validate Notion API capabilities
 
-Use a dedicated test page to exercise markdown retrieval and page creation or update. Check public-read behavior separately from authenticated access and probe only the schema operations needed to assess recipe provisioning.
+Use a dedicated test page to exercise markdown retrieval and page creation or update. Check public-read behavior separately from authenticated access and probe only the schema operations needed to assess recipe provisioning. Findings: [notion-api-findings.md](../notion-api-findings.md).
 
 **Depends on:** M-013.
 
@@ -40,7 +40,7 @@ Use a dedicated test page to exercise markdown retrieval and page creation or up
 
 ### M-015 Validate Google Docs and Sheets access
 
-Create and read a controlled Google Docs draft and spreadsheet. Determine which identifiers and metadata support the proposed tag-and-file convention and recruitment form destination, and whether needed content can be read and written in a usable form.
+Create and read a controlled Google Docs draft and spreadsheet. Determine which identifiers and metadata support the proposed tag-and-file convention and recruitment form destination, and whether needed content can be read and written in a usable form. Findings: [google-docs-sheets-findings.md](../google-docs-sheets-findings.md).
 
 **Depends on:** M-013.
 
@@ -48,7 +48,7 @@ Create and read a controlled Google Docs draft and spreadsheet. Determine which 
 
 ### M-016 Validate Zapier API-driven automation
 
-Use a harmless test trigger and sink to determine whether the Zapier API supports the required automation lifecycle: configuration, activation or test execution, run inspection, and retry/error visibility.
+Use a harmless test trigger and sink to determine whether the Zapier API supports the required automation lifecycle: configuration, activation or test execution, run inspection, and retry/error visibility. Findings: [zapier-automation-findings.md](../zapier-automation-findings.md).
 
 **Depends on:** M-013.
 
