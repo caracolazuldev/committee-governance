@@ -17,6 +17,10 @@ Verify programmatic access to create/read a controlled draft and spreadsheet. Re
 
 Prove that a small test automation can be configured, run, inspected, and retried through the API, using a harmless test action. Record trigger, polling, task-history, and failure-handling constraints; do not use the no-code UI builder.
 
+## M-019 Explore meeting and collaboration document library UX
+
+Prototype a Notion library for meeting documents, shared resources, and collaboration documents. Test navigation, classification, metadata, search/filtering, links from meetings, and internal versus public access.
+
 # ── Quality Assurance ──
 # ── In Progress ──
 # ── Sprint ──
@@ -28,10 +32,6 @@ Use a tagged test draft to exercise the narrow Google Docs-to-Notion knowledge-b
 ## M-018 Explore meeting facilitation UX in Notion
 
 Prototype agenda creation, meeting conduct guidance, human note-taking, and motion creation, amendment, debate, and disposition in a test Notion workspace. Validate the flow with a scenario walkthrough and record usability findings; guidance must be configurable to committee rules and practices.
-
-## M-019 Explore meeting and collaboration document library UX
-
-Prototype a Notion library for meeting documents, shared resources, and collaboration documents. Test navigation, classification, metadata, search/filtering, links from meetings, and internal versus public access.
 
 ## M-020 Prototype recruitment form to Google Sheets
 

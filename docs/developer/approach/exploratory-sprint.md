@@ -74,7 +74,7 @@ Treat procedural guidance as configurable support, not authoritative rules: comm
 
 ### M-019 Explore meeting and collaboration document library UX
 
-Prototype a Notion library experience for meeting documents, shared resources, and collaboration documents. Explore how people browse, classify, search, relate, and reuse documents without confusing public records with internal working material.
+Prototype a Notion library experience for meeting documents, shared resources, and collaboration documents. Explore how people browse, classify, search, relate, and reuse documents without confusing public records with internal working material. Findings: [document-library-findings.md](../document-library-findings.md).
 
 **Depends on:** M-013, M-014, and M-015.
 
